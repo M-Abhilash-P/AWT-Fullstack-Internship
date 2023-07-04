@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+              $("h1").css("color","purple").slideUp(5000).slideDown(3000);
+               
+            });
+        });
+    </script>
+       <style>
+        .button{background-color: cyan;
+        font-weight: 500;
+        width: 125px;
+        height: 45px;
+        font-size: medium;
+        font-family: sans-serif;
+        border-color: goldenrod;
+        border-radius: 45px;
+    }
+
+    .button:hover{
+        background-color: cornflowerblue;
+        color: lawngreen;
+    }
+    </style>
+</head>
+<body>
+    <h1>jQuery is Shit!!</h1>
+    <button class="button">Click me</button>
+    
+</body>
+</html>

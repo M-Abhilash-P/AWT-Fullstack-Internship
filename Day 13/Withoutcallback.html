@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+              $("p").fadeOut("slow");
+                alert("Hidden Successfully!!")
+               
+            });
+        });
+    </script>
+     <style>
+        .button{background-color: lightcoral;
+        font-weight: 500;
+        width: 125px;
+        height: 45px;
+        font-size: medium;
+        font-family: sans-serif;
+        border-color: goldenrod;
+        border-radius: 15px;
+    }
+
+    .button:hover{
+        background-color: lightblue;
+        color: mediumorchid;
+    }
+    </style>
+</head>
+<body>
+    <button class="button">Hide</button>
+    <p>This is the message to be Hidden!!</p>
+    
+</body>
+</html>
