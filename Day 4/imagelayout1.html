@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay</title>
+
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+        }
+
+        .img{
+           display: grid;
+            width: 300px;
+            transition: 2s;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 3s;
+            background-color: rgba(168, 3, 3, 0.7);
+        }  
+        
+        .container:hover .overlay{
+            opacity: 4;
+        }
+
+        .container:hover .img{
+            transform: rotate(360deg);
+        }
+
+        .text{
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Image Overlay</h2>
+
+    <div class="container">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="Vertical Image" class="img">
+
+        <div class="overlay">
+            <div class="text">
+                <p>Image Overlay</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
